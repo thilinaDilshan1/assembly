@@ -1,0 +1,14 @@
+print String - 4 (la $a0,) --> .ascii
+print integer - 1 (lw $a0,) --> .word
+print float - 2 (lwc1 $f12,)or (l.s $f12,) --> .float
+move values between registers - mov.s $f12,f2
+print double - 3 (ldc1 $f12,)
+add double - add.d
+move from lo - mflo
+
+branch - beq,bne,bgt,blt,ble,bge,bgtz,bltz
+
+compare number - slt,sgt,slti
+
+mtc1 $t1, $f1 - Move $t1 to floating-point register $f1
+cvt.s.w $f0, $f0 - Convert $f0 to a single-precision float
